@@ -67,9 +67,9 @@ extension BookmarksVC: UITableViewDataSource {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: BookmarksTableViewCell.self), for: indexPath) as? BookmarksTableViewCell else {
       return UITableViewCell()
     }
-    let bookmarkManager = BookmarkManager()
+    
     let imageModel = viewModel.imageModel[indexPath.row]
-    let viewModelCell = BookmarksTableViewCellVM(bookmarkManager: bookmarkManager, imageModel: imageModel)
+    let viewModelCell = BookmarksTableViewCellVM(bookmarkManager: viewModel.bookmarkManager, imageModel: imageModel)
 
     cell.configure(viewModel: viewModelCell)
     return cell
@@ -81,6 +81,14 @@ extension BookmarksVC: UITableViewDataSource {
 extension BookmarksVC: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     tableView.deselectRow(at: indexPath, animated: true)
+  }
+
+  func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    if editingStyle == .delete {
+      let favorite = viewModel.imageModel.remove(at: indexPath.row)
+      viewModel.bookmarkManager.deleteBookmarkImage(with: favorite.title ?? "")
+      tableView.deleteRows(at: [indexPath], with: .fade)
+    }
   }
 }
 

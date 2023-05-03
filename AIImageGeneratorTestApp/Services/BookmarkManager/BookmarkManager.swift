@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 final class BookmarkManager: BookmarkManagerProtocol {
 
@@ -55,17 +56,29 @@ final class BookmarkManager: BookmarkManagerProtocol {
     }
   }
 
-  func deleteBookmarkImage(withName name: String) -> Bool {
-    guard let directory = bookmarkDirectoryURL else {
-      return false
-    }
-    let fileURL = directory.appendingPathComponent(name)
+  func deleteFromCoreData(title: String) {
+    let request = ImageCoreDataModel.fetchRequest()
+    request.predicate = NSPredicate(format: "title == %@", title)
+
+     do {
+       let results = try CoreDataService.context.fetch(request)
+         guard let favorite = results.first else { return }
+
+       CoreDataService.context.delete(favorite)
+       try CoreDataService.context.save()
+     } catch let error as NSError {
+         print("Could not fetch \(error), \(error.userInfo)")
+     }
+  }
+
+  func deleteBookmarkImage(with name: String) {
+    guard let directory = bookmarkDirectoryURL else { return }
+    let fileURL = directory.appendingPathComponent("\(name).jpg")
     do {
       try fileManager.removeItem(at: fileURL)
-      return true
+      self.deleteFromCoreData(title: name)
     } catch {
       print(error.localizedDescription)
-      return false
     }
   }
   

@@ -11,4 +11,5 @@ protocol BookmarkManagerProtocol {
   func isBookmarkImageExist(withName name: String) -> Bool
   func saveBookmarkImage(_ image: Data, withName name: String)
   func getBookmarkImage(with name: String) -> Data?
+  func deleteBookmarkImage(with name: String)
 }

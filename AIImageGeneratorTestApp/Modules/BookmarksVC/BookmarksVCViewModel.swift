@@ -12,11 +12,13 @@ final class BookmarksVCViewModel: BookmarksVCViewModelProtocol {
   //MARK: - Properties
 
   var imageModel: [ImageModel]
+  var bookmarkManager: BookmarkManagerProtocol
 
   //MARK: - Initialization
 
-  init(imageModel: [ImageModel]) {
+  init(imageModel: [ImageModel], bookmarkManager: BookmarkManagerProtocol) {
     self.imageModel = imageModel
+    self.bookmarkManager = bookmarkManager
   }
 
   //MARK: - Methods
