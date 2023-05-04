@@ -14,7 +14,7 @@
 		D9D307D82A0181D100414123 /* GenerateImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D307D72A0181D100414123 /* GenerateImageVC.swift */; };
 		D9D307DD2A0181D200414123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D307DC2A0181D200414123 /* Assets.xcassets */; };
 		D9D307E02A0181D200414123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D307DE2A0181D200414123 /* LaunchScreen.storyboard */; };
-		D9D307F52A0181D300414123 /* AIImageGeneratorTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D307F42A0181D300414123 /* AIImageGeneratorTestAppUITests.swift */; };
+		D9D307F52A0181D300414123 /* GenerateImageVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D307F42A0181D300414123 /* GenerateImageVCTests.swift */; };
 		D9D307F72A0181D300414123 /* AIImageGeneratorTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D307F62A0181D300414123 /* AIImageGeneratorTestAppUITestsLaunchTests.swift */; };
 		D9D308042A01842C00414123 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D308032A01842C00414123 /* TabBarViewController.swift */; };
 		D9D308062A01845600414123 /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D308052A01845600414123 /* Builder.swift */; };
@@ -71,7 +71,7 @@
 		D9D307E12A0181D200414123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9D307E62A0181D300414123 /* AIImageGeneratorTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIImageGeneratorTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D307F02A0181D300414123 /* AIImageGeneratorTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIImageGeneratorTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9D307F42A0181D300414123 /* AIImageGeneratorTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIImageGeneratorTestAppUITests.swift; sourceTree = "<group>"; };
+		D9D307F42A0181D300414123 /* GenerateImageVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageVCTests.swift; sourceTree = "<group>"; };
 		D9D307F62A0181D300414123 /* AIImageGeneratorTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIImageGeneratorTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D9D308032A01842C00414123 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D9D308052A01845600414123 /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 		D9D307F32A0181D300414123 /* AIImageGeneratorTestAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				D9D307F42A0181D300414123 /* AIImageGeneratorTestAppUITests.swift */,
+				D9D307F42A0181D300414123 /* GenerateImageVCTests.swift */,
 				D9D307F62A0181D300414123 /* AIImageGeneratorTestAppUITestsLaunchTests.swift */,
 			);
 			path = AIImageGeneratorTestAppUITests;
@@ -526,7 +526,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9D307F72A0181D300414123 /* AIImageGeneratorTestAppUITestsLaunchTests.swift in Sources */,
-				D9D307F52A0181D300414123 /* AIImageGeneratorTestAppUITests.swift in Sources */,
+				D9D307F52A0181D300414123 /* GenerateImageVCTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

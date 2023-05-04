@@ -16,6 +16,7 @@ final class GenerateImageVC: UIViewController {
     textField.translatesAutoresizingMaskIntoConstraints = false
     textField.borderStyle = .roundedRect
     textField.placeholder = Constants.textFieldPlaceholder
+    textField.accessibilityIdentifier = "searchTextField"
     return textField
   }()
 
@@ -24,6 +25,7 @@ final class GenerateImageVC: UIViewController {
     button.translatesAutoresizingMaskIntoConstraints = false
     button.setTitle(Constants.buttonTitle, for: .normal)
     button.backgroundColor = .systemBlue
+    button.accessibilityIdentifier = "createButton"
     button.addTarget(self, action: #selector(createImageButtonTapped), for: .touchUpInside)
     return button
   }()
@@ -40,6 +42,7 @@ final class GenerateImageVC: UIViewController {
   private let imageView: UIImageView = {
     let imageView = UIImageView()
     imageView.translatesAutoresizingMaskIntoConstraints = false
+    imageView.accessibilityIdentifier = "imageView"
     return imageView
   }()
 
