@@ -30,7 +30,7 @@ final class NetworkService: NetworkServiceProtocol {
 //MARK: - Create Request
 
 extension NetworkService {
-  private func createRequest(with url: URL?, type: HTTPMethod, completion: @escaping (URLRequest) -> Void) {
+  func createRequest(with url: URL?, type: HTTPMethod, completion: @escaping (URLRequest) -> Void) {
     guard let apiURL = url else { return }
     var request = URLRequest(url: apiURL)
     request.httpMethod = type.rawValue

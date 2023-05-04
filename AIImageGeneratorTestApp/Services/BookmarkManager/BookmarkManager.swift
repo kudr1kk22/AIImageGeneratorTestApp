@@ -15,7 +15,7 @@ final class BookmarkManager: BookmarkManagerProtocol {
   private let bookmarkDirectoryName = "BookmarkImages"
   private let fileManager = FileManager.default
 
-  private var bookmarkDirectoryURL: URL? {
+  var bookmarkDirectoryURL: URL? {
     guard let documentDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first else {
       return nil
     }

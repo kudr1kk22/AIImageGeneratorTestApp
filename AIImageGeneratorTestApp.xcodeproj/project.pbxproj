@@ -14,7 +14,6 @@
 		D9D307D82A0181D100414123 /* GenerateImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D307D72A0181D100414123 /* GenerateImageVC.swift */; };
 		D9D307DD2A0181D200414123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D307DC2A0181D200414123 /* Assets.xcassets */; };
 		D9D307E02A0181D200414123 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D307DE2A0181D200414123 /* LaunchScreen.storyboard */; };
-		D9D307EB2A0181D300414123 /* AIImageGeneratorTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D307EA2A0181D300414123 /* AIImageGeneratorTestAppTests.swift */; };
 		D9D307F52A0181D300414123 /* AIImageGeneratorTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D307F42A0181D300414123 /* AIImageGeneratorTestAppUITests.swift */; };
 		D9D307F72A0181D300414123 /* AIImageGeneratorTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D307F62A0181D300414123 /* AIImageGeneratorTestAppUITestsLaunchTests.swift */; };
 		D9D308042A01842C00414123 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D308032A01842C00414123 /* TabBarViewController.swift */; };
@@ -39,6 +38,8 @@
 		D9D4CACA2A0298A300E2E44B /* ImageCoreDataModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D4CAC82A0298A300E2E44B /* ImageCoreDataModel+CoreDataProperties.swift */; };
 		D9F929C52A029B52005C21CB /* AIImageGeneratorTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D9D4CAC42A02981A00E2E44B /* AIImageGeneratorTestApp.xcdatamodeld */; };
 		D9F929C82A02A06B005C21CB /* BookmarkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F929C72A02A06B005C21CB /* BookmarkManager.swift */; };
+		D9FBD89E2A03A5AF00CEEC75 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FBD89D2A03A5AF00CEEC75 /* NetworkServiceTests.swift */; };
+		D9FBD8A02A03A84F00CEEC75 /* BookmarkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FBD89F2A03A84F00CEEC75 /* BookmarkManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +70,6 @@
 		D9D307DF2A0181D200414123 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9D307E12A0181D200414123 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9D307E62A0181D300414123 /* AIImageGeneratorTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIImageGeneratorTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9D307EA2A0181D300414123 /* AIImageGeneratorTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIImageGeneratorTestAppTests.swift; sourceTree = "<group>"; };
 		D9D307F02A0181D300414123 /* AIImageGeneratorTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AIImageGeneratorTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D307F42A0181D300414123 /* AIImageGeneratorTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIImageGeneratorTestAppUITests.swift; sourceTree = "<group>"; };
 		D9D307F62A0181D300414123 /* AIImageGeneratorTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIImageGeneratorTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -95,6 +95,8 @@
 		D9D4CAC72A0298A300E2E44B /* ImageCoreDataModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageCoreDataModel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D9D4CAC82A0298A300E2E44B /* ImageCoreDataModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageCoreDataModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D9F929C72A02A06B005C21CB /* BookmarkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkManager.swift; sourceTree = "<group>"; };
+		D9FBD89D2A03A5AF00CEEC75 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		D9FBD89F2A03A84F00CEEC75 /* BookmarkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +177,8 @@
 		D9D307E92A0181D300414123 /* AIImageGeneratorTestAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				D9D307EA2A0181D300414123 /* AIImageGeneratorTestAppTests.swift */,
+				D9FBD89D2A03A5AF00CEEC75 /* NetworkServiceTests.swift */,
+				D9FBD89F2A03A84F00CEEC75 /* BookmarkManagerTests.swift */,
 			);
 			path = AIImageGeneratorTestAppTests;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 					};
 					D9D307E52A0181D300414123 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = D9D307CF2A0181D000414123;
 					};
 					D9D307EF2A0181D300414123 = {
@@ -512,7 +516,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9D307EB2A0181D300414123 /* AIImageGeneratorTestAppTests.swift in Sources */,
+				D9FBD89E2A03A5AF00CEEC75 /* NetworkServiceTests.swift in Sources */,
+				D9FBD8A02A03A84F00CEEC75 /* BookmarkManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,15 +732,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W3W6QQKF4D;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kudr7k.AIImageGeneratorTestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AIImageGeneratorTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AIImageGeneratorTestApp";
@@ -747,11 +759,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W3W6QQKF4D;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kudr7k.AIImageGeneratorTestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

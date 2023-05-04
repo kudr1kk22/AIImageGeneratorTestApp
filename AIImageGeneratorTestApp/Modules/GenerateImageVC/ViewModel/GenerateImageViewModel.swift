@@ -61,10 +61,8 @@ extension GenerateImageViewModel: GenerateImageViewModelProtocol {
   //MARK: - Check image limit
 
   func checkImageLimit() {
-    print(imageModel.count)
     if imageModel.count == imagesLimit {
       let oldestImage = imageModel.first
-      print(oldestImage?.title)
       bookmarksManager.deleteBookmarkImage(with: oldestImage?.title ?? "")
       imageModel.removeFirst()
     }
