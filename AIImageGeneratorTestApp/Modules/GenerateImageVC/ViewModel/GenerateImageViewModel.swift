@@ -12,21 +12,19 @@ final class GenerateImageViewModel {
   //MARK: - Properties
 
   private let networkService: NetworkServiceProtocol
-  var imageModel: [ImageModel]
+  var imageModel: [ImageModel] = []
   private let bookmarksManager: BookmarkManagerProtocol
- 
+  private let imagesLimit = 4
 
   //MARK: - Init
 
-  init(networkService: NetworkServiceProtocol, imageModel: [ImageModel], bookmarksManager: BookmarkManagerProtocol) {
+  init(networkService: NetworkServiceProtocol, bookmarksManager: BookmarkManagerProtocol) {
     self.networkService = networkService
-    self.imageModel = imageModel
     self.bookmarksManager = bookmarksManager
   }
-
-
-
 }
+
+//MARK: - Fetch data image
 
 extension GenerateImageViewModel: GenerateImageViewModelProtocol {
   func fetchData(with text: String, completion: @escaping (Bool) -> Void) {
@@ -48,17 +46,44 @@ extension GenerateImageViewModel: GenerateImageViewModelProtocol {
     }
   }
 
+  //MARK: - Save image
+  
   func saveImage(with text: String, and image: Data, completion: @escaping (Bool) -> Void) {
     if bookmarksManager.isBookmarkImageExist(withName: text) {
       completion(true)
     } else {
+      checkImageLimit()
       self.bookmarksManager.saveBookmarkImage(image, withName: text)
       completion(false)
     }
+  }
 
+  //MARK: - Check image limit
+
+  func checkImageLimit() {
+    print(imageModel.count)
+    if imageModel.count == imagesLimit {
+      let oldestImage = imageModel.first
+      print(oldestImage?.title)
+      bookmarksManager.deleteBookmarkImage(with: oldestImage?.title ?? "")
+      imageModel.removeFirst()
+    }
+  }
+
+  func fetchFromCoreData() -> [ImageModel] {
+    let request = ImageCoreDataModel.fetchRequest()
+    let imagesCoreData = try? CoreDataService.context.fetch(request)
+    guard let image = imagesCoreData.map({ model in
+      model.map { model in
+        ImageModel(title: model.title,
+                   imagePath: model.imagePath)
+      }
+    }) else { return [] }
+
+    return image
+  }
+
+  func viewWillAppear() {
+    imageModel = fetchFromCoreData()
   }
 }
-
-
-
-

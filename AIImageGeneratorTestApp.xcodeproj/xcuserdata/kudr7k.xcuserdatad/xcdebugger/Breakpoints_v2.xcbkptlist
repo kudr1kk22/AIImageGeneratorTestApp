@@ -7,69 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F7DCACE2-19A6-42B1-8FA5-07404944EAD0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AIImageGeneratorTestApp/Modules/TabBar/TabBarViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "tabBarController(_:didSelect:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F7DCACE2-19A6-42B1-8FA5-07404944EAD0 - b48d4be890da921b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AIImageGeneratorTestApp.TabBarViewController.tabBarController(_: __C.UITabBarController, didSelect: __C.UIViewController) -&gt; ()"
-                  moduleName = "AIImageGeneratorTestApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kudr7k/Desktop/AIImageGeneratorTestApp/AIImageGeneratorTestApp/Modules/TabBar/TabBarViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "121">
-               </Location>
-               <Location
-                  uuid = "F7DCACE2-19A6-42B1-8FA5-07404944EAD0 - b48d4be890da921b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AIImageGeneratorTestApp.TabBarViewController.tabBarController(_: __C.UITabBarController, didSelect: __C.UIViewController) -&gt; ()"
-                  moduleName = "AIImageGeneratorTestApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kudr7k/Desktop/AIImageGeneratorTestApp/AIImageGeneratorTestApp/Modules/TabBar/TabBarViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "219">
-               </Location>
-               <Location
-                  uuid = "F7DCACE2-19A6-42B1-8FA5-07404944EAD0 - b48d4be890da921b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AIImageGeneratorTestApp.TabBarViewController.tabBarController(_: __C.UITabBarController, didSelect: __C.UIViewController) -&gt; ()"
-                  moduleName = "AIImageGeneratorTestApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/kudr7k/Desktop/AIImageGeneratorTestApp/AIImageGeneratorTestApp/Modules/TabBar/TabBarViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "604">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "12DC4918-5498-475A-8388-A14B0A3B80D5"
             shouldBeEnabled = "No"
             ignoreCount = "0"

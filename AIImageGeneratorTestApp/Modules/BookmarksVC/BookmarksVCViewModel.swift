@@ -11,13 +11,12 @@ final class BookmarksVCViewModel: BookmarksVCViewModelProtocol {
   
   //MARK: - Properties
 
-  var imageModel: [ImageModel]
+  var imageModel: [ImageModel] = []
   var bookmarkManager: BookmarkManagerProtocol
 
   //MARK: - Initialization
 
-  init(imageModel: [ImageModel], bookmarkManager: BookmarkManagerProtocol) {
-    self.imageModel = imageModel
+  init(bookmarkManager: BookmarkManagerProtocol) {
     self.bookmarkManager = bookmarkManager
   }
 
@@ -36,6 +35,9 @@ final class BookmarksVCViewModel: BookmarksVCViewModelProtocol {
     return image
   }
 
+  func viewWillAppear() {
+    imageModel = fetchFromCoreData()
+  }
 }
 
 

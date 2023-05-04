@@ -29,19 +29,19 @@ final class TabBarViewController: UITabBarController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.setViewControllers(viewModel.createTabBarItems())
-    self.delegate = self
+//    self.delegate = self
   }
 }
 
-//MARK: - Tabbar delegate
-
-extension TabBarViewController: UITabBarControllerDelegate {
-  func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-    guard let navController = viewController as? UINavigationController, let bookmarkVC = navController.viewControllers.first as? BookmarksVC else {
-      return }
-    bookmarkVC.viewModel.imageModel = bookmarkVC.viewModel.fetchFromCoreData()
-    }
-}
+////MARK: - Tabbar delegate
+//
+//extension TabBarViewController: UITabBarControllerDelegate {
+//  func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+//    guard let navController = viewController as? UINavigationController, let bookmarkVC = navController.viewControllers.first as? BookmarksVC else {
+//      return }
+//    bookmarkVC.viewModel.imageModel = bookmarkVC.viewModel.fetchFromCoreData()
+//    }
+//}
 
 // MARK: - TabBarViewProtocol
 

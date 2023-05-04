@@ -28,6 +28,7 @@ final class BookmarksVC: UIViewController {
 
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(false)
+    viewModel.viewWillAppear()
     tableView.reloadData()
   }
 
@@ -68,7 +69,7 @@ extension BookmarksVC: UITableViewDataSource {
       return UITableViewCell()
     }
     
-    let imageModel = viewModel.imageModel[indexPath.row]
+    let imageModel = viewModel.imageModel.reversed()[indexPath.row]
     let viewModelCell = BookmarksTableViewCellVM(bookmarkManager: viewModel.bookmarkManager, imageModel: imageModel)
 
     cell.configure(viewModel: viewModelCell)

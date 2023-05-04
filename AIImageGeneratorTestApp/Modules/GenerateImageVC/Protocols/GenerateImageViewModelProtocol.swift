@@ -10,5 +10,6 @@ import Foundation
 protocol GenerateImageViewModelProtocol {
   func fetchData(with text: String, completion: @escaping (Bool) -> Void)
   var imageModel: [ImageModel] { get set }
-  func saveImage(with text: String, and image: Data, completion: @escaping (Bool) -> Void) 
+  func saveImage(with text: String, and image: Data, completion: @escaping (Bool) -> Void)
+  func viewWillAppear()
 }

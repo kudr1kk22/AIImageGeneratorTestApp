@@ -10,5 +10,5 @@ import Foundation
 protocol BookmarksVCViewModelProtocol {
   var imageModel: [ImageModel] { get set }
   var bookmarkManager: BookmarkManagerProtocol { get set }
-  func fetchFromCoreData() -> [ImageModel] 
+  func viewWillAppear()
 }

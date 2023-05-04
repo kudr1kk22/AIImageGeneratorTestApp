@@ -34,7 +34,6 @@ extension NetworkService {
     guard let apiURL = url else { return }
     var request = URLRequest(url: apiURL)
     request.httpMethod = type.rawValue
-    request.timeoutInterval = 30
     completion(request)
   }
 }

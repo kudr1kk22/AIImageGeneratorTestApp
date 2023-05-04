@@ -59,10 +59,16 @@ final class GenerateImageVC: UIViewController {
 
   //MARK: - Life Cycle
 
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    viewModel.viewWillAppear()
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
     setView()
     setConstraints()
+
   }
 
   private func setView() {
